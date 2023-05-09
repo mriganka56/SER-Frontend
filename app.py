@@ -16,12 +16,12 @@ def main():
     if selected_box == 'Emotion Recognition':        
         st.sidebar.success('Try by yourself by adding a new audio file!')
         application()
-    if selected_box=='view source code':
+    if selected_box=='View Source Code':
         st.code(get_file_content_as_string("app.py"))
 
-@st.cache_data(show_spinner=False)
+@st.cache_resource(show_spinner=False)
 def get_file_content_as_string(path):
-    url = 'https://raw.githubusercontent.com/sunilbelde/Emotion-recognition/main/' + path
+    url = 'https://raw.githubusercontent.com/mriganka56/SER-Frontend/main/' + path
     response = urllib.request.urlopen(url)
     return response.read().decode("utf-8")
     
