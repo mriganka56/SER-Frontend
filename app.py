@@ -60,5 +60,10 @@ def predict(model,wav_filepath):
     print(emotions[np.argmax(predictions[0])+1])
     return emotions[np.argmax(predictions[0])+1]
 
+st.markdown("<h1 style='text-align: center; color: black;'>A COMPARATIVE ANALYSIS ON AUDIO SPEECH RECOGNITION</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: black;'>By</h3>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center; color: black;'>Archishman Sadhukhan, Arijit Dutta, Dipayan Banik, Mriganka Paul, <br/>Oishe Chakravorty</h5>", unsafe_allow_html=True)
+
+
 if __name__ == "__main__":
     main()
