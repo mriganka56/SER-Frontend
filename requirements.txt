@@ -1,0 +1,4 @@
+tensorflow-cpu
+numpy
+streamlit
+librosa
